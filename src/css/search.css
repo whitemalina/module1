@@ -1,0 +1,101 @@
+.search-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.04);
+    padding-bottom: 2rem;
+}
+
+.container {
+    width: 1152px;
+}
+
+.search-result-title {
+    margin-top: 36px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.search-result-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.search-result-item {
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.search-result-item-content {
+    z-index: 2;
+    position: relative;
+    transition: all .2s;
+}
+
+.search-result-item p:nth-child(1) {
+    font-size: 48px;
+    text-align: center;
+    opacity: 1;
+}
+
+.search-result-item span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search-result-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1875;
+    opacity: .5;
+}
+
+.search-result-item-content:hover {
+    transform: scale(1.05);
+}
+
+.probability-info {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: .5rem;
+    height: 5px;
+    background-color: #157347;
+}
+
+.probability-info.bad {
+    width: 20%;
+    background-color: #731515;
+}
+
+.probability-info.medium {
+    width: 60%;
+    background-color: #587315;
+}
+
+.search-result-item-car, .search-result-item-datetime {
+    display: flex;
+}
+
+.search-result-item-car div:nth-child(1), .search-result-item-datetime div:nth-child(1) {
+    margin-right: .5rem;
+}
+
+.search-result-item-car-shadow {
+    background-color: #fff;
+    box-shadow: 0 12px 32px rgba(0, 11, 51, .1);
+    height: 100%;
+    left: 9px;
+    z-index: -2;
+    position: absolute;
+    right: 9px;
+    top: 0;
+}
