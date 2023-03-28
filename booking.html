@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/booking.css">
+    <title>Бронирование</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="src/images/logo.png" alt="Take Your Car">
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="">Акции</a>
+            <a href="">Поиск</a>
+            <a href="">Регистрация</a>
+            <a href="">Личный кабинет</a>
+        </div>
+    </div>
+    <div class="booking">
+        <div class="container">
+            <h1 class="booking-title">Бронирование</h1>
+            <div class="booking-wrapper">
+                <div class=""></div>
+                <div class="booking-item">
+                    <div class="booking-item-content">
+                        <p>🚗</p>
+                        <div class="booking-item-car">
+                            <div>
+                                <span>Марка</span>
+                                <p>Volkswagen</p>
+                            </div>
+                            <div>
+                                <span>Модель</span>
+                                <p>Polo</p>
+                            </div>
+                        </div>
+                        <div class="booking-item-datetime">
+                            <div>
+                                <span>Дата</span>
+                                <p>28.03.2023</p>
+                            </div>
+                            <div>
+                                <span>Время</span>
+                                <p>12:00</p>
+                            </div>
+
+                        </div>
+                        <span>Стоимость</span>
+                        <p>205 ₽</p>
+                        <div class="probability">
+                            <span>Вероятность бронирования </span>
+                            <div class="probability-info">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-item-car-shadow"></div>
+                </div>
+                <div class="booking-userfill">
+                    <p class="booking-userfill-title">Данные водителя:</p>
+                    <form class="user-info-form">
+                        <label for="name">Имя</label>
+                        <input required placeholder="Иван" type="text" id="name">
+                        <label for="surname">Фамилия</label>
+                        <input placeholder="Иванов" required type="text" id="surname">
+                        <label for="birthday">Дата рождения</label>
+                        <input required type="date" value="2023-03-28" id="birthday">
+                        <label for="document-number">Номер водительского удостоверения</label>
+                        <input placeholder="1234567890" required type="number" max="10" min="10" id="document-number">
+                        <p>Финальная стоимость: 205 ₽</p>
+                        <a href="booking_management.html" class="btn-send">Оформить бронирование</a>
+                    </form>
+                    <div class="booking-item-car-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
